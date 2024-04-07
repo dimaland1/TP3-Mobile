@@ -18,5 +18,9 @@
         android:id="@+id/affichageFragment"
         android:name="com.example.tp3_mobile.AffichageFragment"
         android:label="fragment_affichage"
-        tools:layout="@layout/fragment_affichage" />
+        tools:layout="@layout/fragment_affichage" >
+        <action
+            android:id="@+id/action_affichageFragment_to_saisieFragment"
+            app:destination="@id/saisieFragment" />
+    </fragment>
 </navigation>

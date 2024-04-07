@@ -2,6 +2,7 @@ package com.example.tp3_mobile
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import java.io.Serializable
 
 class SaisieModel : ViewModel() {
     private val _signupFormData = MutableLiveData<SignupFormData>()
@@ -20,4 +21,4 @@ data class SignupFormData(
     val email: String,
     val interests: List<String>,
     val sync: Boolean
-)
+) : Serializable
