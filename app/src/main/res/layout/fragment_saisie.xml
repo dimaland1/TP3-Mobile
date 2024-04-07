@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieFragment"
+    android:background="@color/colorPrimary"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inscription"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/nom" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/prenom" />
+
+            <EditText
+                android:id="@+id/editTextDate"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="@string/date_de_naissance"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="@string/numero_telephone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="@string/courriel"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Ajoutez d'autres EditText pour prénom, date de naissance, numéro de téléphone, adresse mail -->
+
+        <!-- Exemple pour prénom -->
+
+        <!-- CheckBox pour les centres d'intérêt -->
+
+        <CheckBox
+            android:id="@+id/sportCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sport"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+        <!-- Ajoutez d'autres CheckBox pour musique, lecture, etc. -->
+
+        <CheckBox
+            android:id="@+id/musicCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/musique"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/lectureCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lecture"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Switch
+            android:id="@+id/syncSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/synchroniser"
+            android:layout_marginTop="16dp"
+            android:textSize="16dp"
+            android:layout_marginStart="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/addButton"
+                android:layout_width="120px"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:text="@string/telecharger"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_background"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="120px"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:text="@string/soumettre"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TP3-Mobile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nom">nom</string>
+    <string name="prenom">prenom</string>
+    <string name="sport">sport</string>
+    <string name="synchroniser">synchroniser</string>
+    <string name="soumettre">soumettre</string>
+    <string name="date_de_naissance">date de naissance</string>
+    <string name="numero_telephone">numero de téléphone</string>
+    <string name="courriel">courriel</string>
+    <string name="validez">validez</string>
+    <string name="interets">interets</string>
+    <string name="telecharger">telecharger</string>
+    <string name="musique">musique</string>
+    <string name="lecture">lecture</string>
+</resources>

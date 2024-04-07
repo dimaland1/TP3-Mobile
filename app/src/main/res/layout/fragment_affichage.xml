@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AffichageFragment"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vos informations personnelles"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="25dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nom"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/firstNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prenom"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/DateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_de_naissance"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/NumberTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/numero_telephone"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/EmailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courriel"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <!-- Pour les centres d'intérêt, vous pouvez utiliser un seul TextView et mettre à jour son texte
+             pour afficher les intérêts choisis sous forme de liste ou de chaîne de caractères séparés par des virgules. -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vos interet sont :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/interestsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interets"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/validateButton"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/validez"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/saisieFragment">
+
+    <fragment
+        android:id="@+id/saisieFragment"
+        android:name="com.example.tp3_mobile.SaisieFragment"
+        android:label="fragment_saisie"
+        tools:layout="@layout/fragment_saisie" >
+        <action
+            android:id="@+id/action_saisieFragment_to_affichageFragment"
+            app:destination="@id/affichageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/affichageFragment"
+        android:name="com.example.tp3_mobile.AffichageFragment"
+        android:label="fragment_affichage"
+        tools:layout="@layout/fragment_affichage" />
+</navigation>

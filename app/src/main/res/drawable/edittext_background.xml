@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/> <!-- Shadow color with alpha -->
+            <corners android:radius="10dp"/> <!-- Corner radius for shadow -->
+            <padding
+                android:left="10dp"
+            android:top="1dp"
+            android:right="3dp"
+            android:bottom="3dp"
+            />
+        </shape>
+    </item>
+
+    <!-- EditText Background -->
+    <item android:top="1dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF"/> <!-- EditText background color -->
+            <corners android:radius="10dp"/> <!-- Corner radius for EditText -->
+        </shape>
+    </item>
+</selector>
