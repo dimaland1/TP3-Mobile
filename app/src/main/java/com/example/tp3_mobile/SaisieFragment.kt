@@ -1,11 +1,8 @@
 package com.example.tp3_mobile
 
-import ParseJsonService
 import android.app.Activity
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.content.IntentFilter
 import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -39,18 +36,6 @@ class SaisieFragment : Fragment() {
     ): View {
         _binding = FragmentSaisieBinding.inflate(inflater, container, false)
         return binding.root
-    }
-
-    private fun updateUI(data: SignupFormData) {
-        binding.nameEditText.setText(data.name)
-        binding.firstNameEditText.setText(data.firstName)
-        binding.editTextDate.setText(data.birthDate)
-        binding.editTextPhone.setText(data.phoneNumber)
-        binding.editTextTextEmailAddress.setText(data.email)
-        binding.sportCheckBox.isChecked = data.interests.contains(binding.sportCheckBox.text.toString())
-        binding.musicCheckBox.isChecked = data.interests.contains(binding.musicCheckBox.text.toString())
-        binding.lectureCheckBox.isChecked = data.interests.contains(binding.lectureCheckBox.text.toString())
-        binding.syncSwitch.isChecked = data.sync
     }
 
 
@@ -105,9 +90,6 @@ class SaisieFragment : Fragment() {
             data?.data?.let { uri ->
                 context?.let { context ->
                     parseJsonFileFromUri(uri, context)
-
-                    //ParseJsonService.startActionParse(context, uri)
-
                 }
             }
         }
@@ -116,8 +98,7 @@ class SaisieFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        val filter = IntentFilter("com.example.tp3_mobile.ACTION_DATA_LOADED")
-        if (!binding.syncSwitch.isChecked && !isDataLoaded) {
+        if (!isDataLoaded) {
         }else{
             isDataLoaded = false
         }
